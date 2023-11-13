@@ -1,3 +1,42 @@
-$primary-color: rgba(255, 0, 0, 0.288);
+$primary-color: #ffb6b6;
 $secondary-color: #d9d9d9;
 $primary-background: #a5a5a5;
+
+body {
+    margin: 0;
+    background-color: $primary-color;
+}
+
+header {
+    background-color: white;
+    padding: 16px;
+    text-align: center;
+
+    .logo-name {
+        margin-bottom: 48px;
+
+        img {
+            width: 100px;
+        }
+
+        .name {
+            font-size: 32px;
+            .coder-text {
+                color: #45a7c5;
+            }
+            .academy-text {
+                color: #1c3c5c;
+            }
+        }
+    }
+    
+    #nav-items {
+        display: flex;
+        justify-content: space-around;
+        font-size: large;
+
+        a{
+            text-decoration: none;
+        }
+    }
+}
