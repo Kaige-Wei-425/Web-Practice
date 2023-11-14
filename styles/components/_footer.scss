@@ -1,0 +1,39 @@
+@import "../defaults/colors";
+@import "../defaults/breakpoints";
+
+
+
+
+footer {
+    background-color: white;
+    padding: 16px;
+    text-align: center;
+
+
+    .social-media {
+        display: flex;
+        justify-content: space-around;
+        
+    }
+
+    a {
+        i {
+            font-size: 30px;
+            &:hover {
+                font-size: 5rem;
+            }
+
+        }
+    }
+
+}
+
+@media screen and (min-width: $medium) {
+    footer {
+        .social-media {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
