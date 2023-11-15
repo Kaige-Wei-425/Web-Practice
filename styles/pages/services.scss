@@ -1,0 +1,15 @@
+@import "../../index";
+
+main {
+    display: flex column;
+    article {
+        margin: 20px 20px 20px 20px;
+        border: 1px solid red;
+        border-radius: 8px;
+        section {
+            img {
+                width: clamp(100px, 30vw, 1000px);
+            }
+        }
+    }
+}
