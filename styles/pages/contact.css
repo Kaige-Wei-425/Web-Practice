@@ -72,4 +72,54 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main form .form-elements {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+main form .form-elements label {
+  font-size: 1.5rem;
+}
+main form .form-elements .form-input {
+  border: 1px solid red;
+  border-radius: 4px;
+  outline: none;
+}
+main form .form-elements .form-input#form-textarea {
+  resize: none;
+}
+main form .form-elements .form-input:focus {
+  box-shadow: 49px 52px 7px 13px rgba(0, 0, 0, 0.75);
+}
+main form .form-elements .form-input:not(#form-textarea) {
+  height: 20px;
+}
+main .btn-div {
+  text-align: center;
+}
+main .btn-div #submit {
+  height: 40px;
+  color: white;
+  background-color: lightblue;
+  border: none;
+  min-width: 120px;
+  font-size: 1.2rem;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  main form {
+    width: 500px;
+  }
+  main form .form-elements {
+    flex-direction: row;
+    justify-content: space-around;
+  }
 }/*# sourceMappingURL=contact.css.map */
